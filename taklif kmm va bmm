@@ -1,0 +1,60 @@
+//mahdieh navaeifar
+using system;
+using system.Collection.Generic;
+using system.linq;
+using system.Text;
+using system.THreading.tasks;
+
+namespace kmm_va_bmm
+{
+
+    class progrem
+     {
+       public static void main()
+       {
+         Console.Writeline("enter the 1st number:");
+         int X = Convert.TOInt32(Console.Readline());
+         Console.Writeline("enter the 2end number;");
+         int Y = Convert.ToInt32(Console.Readline());
+         bmm(X, Y);
+         kmm(X, Y);
+         }
+           private static void bmm( int x, int y)
+           {
+                 int r;
+                 r = x % y;
+                 while (r!=0)
+                 {
+                      x=y;
+                      y=r;
+                      r= x % y;
+                      
+                  }
+                  Console.WriteLine("\n bmm do adad = " + y)
+       }
+        private static void kmm(int x, int y)
+        {
+            int max= 0;
+            if (x > y)
+                max = x
+            else 
+                max = y;
+                
+                
+                while (true)
+                {
+                
+                
+                    if(max % X ==0 && max % y==0)
+                         break;
+                    else 
+                        ++max;
+                        
+                 }
+                    Console.WriteLine( " kmm do adad = " + max);
+               }
+             }
+           }
+              
+         
+         
