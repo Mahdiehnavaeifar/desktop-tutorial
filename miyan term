@@ -1,0 +1,41 @@
+//mahdieh navaeifar
+using system;
+using system.Collections.Generic;
+using system.linq;
+using system.text;
+using system.Threading.tasks;
+
+namespace final
+{
+  class program 
+  
+  {
+   public static void main()
+    { 
+        Console.WriteLine("Nomre midterm");
+   
+          Double X= Convert.ToDuble(Console.Readline());
+             Console.WriteLine("Nomre payan term :");
+                Double Y=Convert.ToDuble(Console.Readline());
+                  Double show = calc ( X, Y);
+                     Console.WriteLine("\n" =show);
+                     if (show>=10 && show <=20);
+                        console.WriteLine(" eyval pass shodi");
+                     else if ( show>=0 && show<=10)
+                        console.writeLine (" I am sorry because you fail vali zendegi edameh dare ");
+                        
+                     else 
+                         console.Write(" ostad nomre eshtebah dade");
+        }
+        private static Double calc(Double x , Double y)
+        { 
+              Double Result = (x * 0.35) + (y * 0.65);
+              return Result;
+          }
+           
+         }
+      }
+                         
+                  
+                        
+           
